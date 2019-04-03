@@ -8,6 +8,47 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.listMain .listHeader input {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid blue;
+  width: 200px;
+}
+.listMain .listHeader button {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px;
+  margin-right: 0px;
+  background-color:darkblue;
+  color: gainsboro;
+  border: 2px solid blue
+}
+
+.listMain .listHeader button:hover {
+  background-color:rgb(14, 91, 192);
+  border: 2px solid rgb(54, 54, 172)
+}
+
+.listMain .theList li {
+  color: black;
+  background: rgba(17, 0, 255, 0.493);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  list-style: none;
+  transition: background-color .2s ease-out;
+}
+.listMain .theList li:hover {
+  background-color: rgba(93, 29, 158, 0.678);
+  cursor: pointer;
+
+}
+
+ul.theList {
+  padding: 0;
+  margin-bottom: 1.45rem;
+}
+
 article,
 aside,
 details,
@@ -189,26 +230,6 @@ html {
   box-sizing: border-box;
   overflow-y: scroll;
 }
-* {
-  box-sizing: inherit;
-}
-*:before {
-  box-sizing: inherit;
-}
-*:after {
-  box-sizing: inherit;
-}
-body {
-  color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
-  font-weight: normal;
-  word-wrap: break-word;
-  font-kerning: normal;
-  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
-  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
-  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
-  font-feature-settings: "kern", "liga", "clig", "calt";
-}
 img {
   max-width: 100%;
   margin-left: 0;
@@ -332,18 +353,7 @@ hgroup {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
-ul {
-  margin-left: 1.45rem;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-  list-style-position: outside;
-  list-style-image: none;
-}
+
 ol {
   margin-left: 1.45rem;
   margin-right: 0;
