@@ -2,9 +2,11 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
-
 import Header from "./header"
 import "./layout.css"
+import SideNav from "./sideNav";
+import List from "../pages/list"
+import ListItems from "./items";
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -18,8 +20,9 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <>
+      <>  
         <Header siteTitle={data.site.siteMetadata.title} />
+        <SideNav/>
         
         <div
           style={{
@@ -28,7 +31,9 @@ const Layout = ({ children }) => (
            
           }}
         >
+        
           <main>{children}</main>
+            <List/>
           <footer>
             © {new Date().getFullYear()}, Built with
             {` `}
@@ -45,3 +50,12 @@ Layout.propTypes = {
 }
 
 export default Layout
+
+// function openNav() {
+//   document.getElementById("mySidenav").style.width = "250px";
+// }
+
+
+// function closeNav() {
+//   document.getElementById("mySidenav").style.width = "0";
+// }
