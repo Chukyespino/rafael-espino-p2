@@ -6,10 +6,9 @@ import Header from "./header"
 import "./layout.css"
 import SideNav from "./sideNav";
 import List from "../pages/list"
-import ListItems from "./items";
 
 const Layout = ({ children }) => (
-  <StaticQuery
+  <StaticQuery 
     query={graphql`
       query SiteTitleQuery {
         site {
@@ -27,18 +26,22 @@ const Layout = ({ children }) => (
         <div
           style={{
             margin: `0 auto`,
-            maxWidth: 500,
+            
            
           }}
         >
         
           <main>{children}</main>
-            <List/>
-          <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
+         
+          <ul id="main" className="listTop">
+            
+            <li className="listA"><h1>Produce</h1><List/></li>
+            
+            <li className="listA"><h1>Households</h1><List/></li>
+            
+            <li className="listA"><h1>Meat/Dairy</h1><List/></li>
+          </ul>
+        
         </div>
       </>
     )}
@@ -50,12 +53,3 @@ Layout.propTypes = {
 }
 
 export default Layout
-
-// function openNav() {
-//   document.getElementById("mySidenav").style.width = "250px";
-// }
-
-
-// function closeNav() {
-//   document.getElementById("mySidenav").style.width = "0";
-// }
