@@ -1,4 +1,16 @@
 import React from 'react'
+import styled from 'styled-components'
+
+const Button1 = styled.button`
+background-image: linear-gradient(rgba(102, 53, 153, 0.651), rgba(38, 0, 255, 0.61));
+margin-top:163px;
+border-radius: 15px;
+padding-top: 3px;
+padding-bottom: 3px;
+position: fixed;
+color: #072bf8;
+font-size: 30px;
+`
 const SideNav = () => (
          
    
@@ -11,7 +23,7 @@ const SideNav = () => (
     <a href="#">About</a>
     </div>
 
-    <a id="openButton" className="openButton" onClick={openNav}>&#9776; Menu</a>
+    <Button1 id="openButton" onClick={openNav}>&#9776;</Button1>
     </div>
 
 )
@@ -19,13 +31,17 @@ const SideNav = () => (
 function openNav() {
   document.getElementById("mySidenav").style.width = "200px";
   document.getElementById("main").style.marginLeft = "200px";
+  document.getElementById("openButton").style.background="transparent";
   document.getElementById("openButton").style.color="transparent";
+  document.getElementById("openButton").style.border="transparent";
 }
 
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("main").style.marginLeft= "100px";
+  document.getElementById("openButton").style.background="linear-gradient(rgba(102, 53, 153, 0.651), rgba(38, 0, 255, 0.61))";
   document.getElementById("openButton").style.color="#072bf8";
+  document.getElementById("openButton").style.border="metal";
 }
 export default SideNav;
