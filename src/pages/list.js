@@ -1,6 +1,19 @@
 import React, {Component} from 'react'
 import ListItems from '../components/items';
+import styled from 'styled-components'
 
+
+const AddButton = styled.button`
+  padding: 10px;
+  font-size: 16px;
+  font-weight:bold ;
+  margin: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-image: ${props => (props.primary ? "linear-gradient(rgba(102, 53, 153, 0.651), rgba(38, 0, 255, 0.61))" : "linear-gradient(rgba(255, 0, 0, 0.199) .05%, rgba(125, 203, 240, 0.315) 99%)")};
+  color: ${props => (props.primary ? "white" : "blue")};
+  border: 2px solid blue
+`
 class theList extends Component {
     constructor(props){
         super(props);
@@ -44,9 +57,10 @@ class theList extends Component {
                 <div className="listHeader">
                 <form onSubmit={this.addItem}>
                     <input ref={(a) => this._inputElement = a }
-                    placeholder="enter Task">
+                    placeholder="Enter Item">
                     </input>
-                    <button type="submit">Add</button>
+                    <AddButton primary type="submit">ADD</AddButton>
+                    <AddButton  type="submit">ADD</AddButton>
                 </form>
                 </div>
                 <ListItems entries={this.state.items}

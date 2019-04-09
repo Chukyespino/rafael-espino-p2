@@ -41,7 +41,7 @@ body {
   border: 2px solid rgb(37, 25, 204);
   width: 150px;
 }
-.listMain .listHeader button {
+/* .listMain .listHeader button {
 
   padding: 10px;
   font-size: 16px;
@@ -51,7 +51,7 @@ body {
   background-color:darkblue;
   color: gainsboro;
   border: 2px solid blue
-}
+} */
 
 .listMain .listHeader button:hover {
   
@@ -100,12 +100,12 @@ textarea {
   padding-top: 60px; 
   transition: 0.5s; 
 }
-.openButton{
+/* .openButton{
   padding-top: 160px;
   position: fixed;
   color: #072bf8;
   font-size: 30px;
-}
+} */
 .sidenav a {
   padding-top: 60px; 
   padding: 8px 8px 8px 32px;
