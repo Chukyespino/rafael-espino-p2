@@ -59,7 +59,7 @@ class theList extends Component {
                     <input ref={(a) => this._inputElement = a }
                     placeholder="Enter Item">
                     </input>
-                    <AddButton primary type="submit">ADD</AddButton>
+                    
                     <AddButton  type="submit">ADD</AddButton>
                 </form>
                 </div>

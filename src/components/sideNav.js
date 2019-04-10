@@ -29,7 +29,7 @@ const SideNav = () => (
 )
 
 function openNav() {
-  document.getElementById("mySidenav").style.width = "200px";
+  document.getElementById("mySidenav").style.width = "220px";
   document.getElementById("main").style.marginLeft = "200px";
   document.getElementById("openButton").style.background="transparent";
   document.getElementById("openButton").style.color="transparent";

@@ -7,33 +7,19 @@ body {
   
   margin: 0;
   -webkit-font-smoothing: antialiased;
-  background-color: rgb(255, 255, 255)
+  background-color: rgba(137, 228, 240, 0.308)
 }
 
-.list3 {
-  
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #5fc2cfe1;
-}
 .listTop {
   
   list-style-type: none;
   margin: 0;
   overflow: hidden;
-  background-color: transparent;
+  
 }
 
-.listA{
-  float: left;
-  display: block;
-  color: rgba(8, 5, 5, 0.815);
-  text-align: center;
-  padding-left: 25PX;
-  padding-top: 150PX
-}
+
+
 .listMain .listHeader input {
   padding: 10px;
   font-size: 16px;
@@ -41,30 +27,22 @@ body {
   border: 2px solid rgb(37, 25, 204);
   width: 150px;
 }
-/* .listMain .listHeader button {
 
-  padding: 10px;
-  font-size: 16px;
-  margin: 10px;
-  margin-right: 10px;
-  border-radius: 10px;
-  background-color:darkblue;
-  color: gainsboro;
-  border: 2px solid blue
-} */
 
 .listMain .listHeader button:hover {
   
   background-color:rgb(14, 91, 192);
-  border: 2px solid rgb(54, 54, 172)
+  border: 2px solid rgb(54, 54, 172);
+  color: papayawhip
+  
 }
 
 .listMain .theList li {
   
-  color: black;
+ 
   font-size: 25px;
-  background-image: linear-gradient(rgba(38, 0, 255, 0.37), rgba(0, 174, 255, 0.212));
-  padding: 15px;
+  background-image: linear-gradient(rgba(38, 0, 255, 0.637), rgba(0, 174, 255, 0.644));
+  padding: 10px;
   margin-bottom: 10px;
   border-radius: 10px;
   list-style: none;
@@ -72,7 +50,7 @@ body {
 }
 .listMain .theList li:hover {
   
-  background-image: linear-gradient(rgba(255, 0, 0, 0.199) .05%, rgba(125, 203, 240, 0.315) 99%);
+  background-image: linear-gradient(rgba(255, 0, 0, 0.623) .05%, rgba(125, 204, 240, 0.753) 99%);
   cursor: pointer;
 
 }
@@ -100,24 +78,19 @@ textarea {
   padding-top: 60px; 
   transition: 0.5s; 
 }
-/* .openButton{
-  padding-top: 160px;
-  position: fixed;
-  color: #072bf8;
-  font-size: 30px;
-} */
+
 .sidenav a {
   padding-top: 60px; 
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 30px;
   color: #f3f1f1;
   display: block;
   transition: 0.3s;
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #e91b1b5b;
 }
 
 .sidenav .closebtn {

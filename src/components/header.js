@@ -7,6 +7,7 @@ import { Z_BLOCK } from "zlib";
 const Header = ({ siteTitle }) => (
   <header
     style={{
+      
       position: "fixed",
       background: `linear-gradient(rgba(3, 7, 75, 0.801),rgba(0, 17, 255, 0.671))`,
       width:'100%',
